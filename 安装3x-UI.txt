@@ -1,0 +1,41 @@
+首先需要root
+安装termux
+
+执行开始下面命令，全部的命令过程中有提问[y/n]的，全部选y
+
+pkg install proot-distro 
+
+然后去这个文件夹用文本方式打开该文件
+/data/data/com.termux/files/usr/bin/proot-distro
+注释掉
+#if [ "$(id -u)" = "0" ]; then
+#	msg
+#	msg "${BRED}Error: #${PROGRAM_NAME} should not be #executed as root user.${RST}"
+#	msg
+#	exit 1
+#fi
+这行代码
+然后执行开始下面命令安装
+
+pkg install tsu
+
+tsu
+
+proot-distro list
+
+proot-distro install ubuntu
+
+proot-distro login ubuntu
+
+apt full-upgrade
+
+apt update && apt upgrade -y
+apt-get install systemd
+
+apt-get install aptitude
+
+aptitude install systemctl
+
+apt update -y&&apt install -y curl&&apt install -y socat
+
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
